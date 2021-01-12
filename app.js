@@ -60,6 +60,7 @@ app.use((req, res, next) => {
 
     next();
 });
+//Router
 app.use('/', viewRouter);
 app.use('/api/v1/tours', tourRouter);
 app.use('/api/v1/users', userRouter);
