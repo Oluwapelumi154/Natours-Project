@@ -1,0 +1,51 @@
+doctype html
+html
+ head
+  block head
+   meta(charset="utf-8")
+   meta(name="viewport" content="width=device-width, intialscale=1.0")
+   title Natours | #{title}
+   link(rel='stylesheet' type="text/css" href="/css/bootstrap.css")
+   link(rel='stylesheet' type="text/css" href="/css/pug.css")
+   link(rel='stylesheet' type="text/css" href='/Users/css/all.min.css')
+   
+ 
+ body
+  //- HEADER
+  include navbar 
+   
+  //-Content
+  block content
+  //-FOOTER
+  include footer 
+  
+ 
+ 
+ script(src="/js/jquery-3.0.0.min.js")
+ script(src="/js/bootstrap.js") 
+ script(src="/js/popper.min.js")
+ script(src='https://js.stripe.com/v3/')
+ script(src='/js/bundle.js')
+//- script(src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js")
+
+ //-script(src="/js/mapbox.js")
+
+ 
+
+ 
+
+
+  
+  
+  
+	
+  
+ 
+        
+   
+   
+
+	
+  
+  
+  

@@ -1,0 +1,81 @@
+extends base
+block content
+ .container.mt-5
+  .row
+   .col-lg-3.col-sm-6
+    .scrollspy-example.Profile-Content.pt-5.pr-5.text-uppercase.text-center(data-spy="scroll" data-target="#list-example " data-offset="0")
+     ul
+      li.profile-str
+       a(href="/me") 
+        i(class="fas fa-cog") 
+        small Settings 
+      li.profile-str
+       a(href="#") 
+        i(class="fas fa-credit-card") 
+        small Billings
+      li.profile-str
+       a(href="#") 
+        i(class="fas fa-star") 
+        small my Reviews
+      li.profile-str
+       a(href="/my-tours") 
+        i(class="fas fa-book-open") 
+        small my bookings
+     -if(user.role==='admin')
+      ul.Admin-Content
+       hr.bg-light
+       .text-white.p-2 Admin
+       hr.bg-light
+       li.profile-str
+        a(href="#")
+         i(class=" fas fa-pen-square") 
+         small manage tours
+       li.profile-str
+        a(href="#")
+         i(class="fas fa-star") 
+         small manage Reviews
+       li.profile-str
+        a(href="#")
+         i(class="fas fa-users ") 
+         small manage Users
+       li.profile-str
+        a(href="#")
+         i(class="fas fa-book-open") 
+         small manage Bookings
+   .col-lg-9.content-2.col-sm-6
+    h4.mt-2.p-4.Profile-heading your Account Settings
+    .Account-details.p-3 
+     //-URL ENCODed
+     //-form(action='/submit-user-data' method='POST')
+     form.User-data-form
+      .form-group
+       label(for="exampleInputPassword1") Name
+       input#name-form(type="text" class="form-control "  value=`${user.name}` required, name='name')
+      .form-group
+       label(for="exampleInputPassword1") Email Address
+       input#email-form(type="email" class="form-control" value=`${user.email}` required, name='email')
+      .form-group.user-picture.mt-2.p-2
+       img(src=`/User-images/${user.photo}` id="image" class="img-fluid")
+       .custom-file.mt-2
+        input#photo(class="custom-file-input" type="file" accept='image/*' name="photo")
+        label(for="photo" class="custom-file-label") Upload new Photo
+      button.Accountbtn.btn.btn-lg.mt-2#Accountbtn(type="submit") Save Settings  
+      
+    hr
+    h4.mt-2.p-4.Profile-heading Password Change 
+    .Password-info.p-3
+     form.Password-Update
+      .form-group
+      label(for="exampleInputPassword1") Current Password:
+      input#CurrentPassword(type="password" class="form-control",Placeholder='********' minlength='8',required)
+      .form-group
+      label(for="exampleInputPassword1") New Password:
+      input#NewPassword(type="password" class="form-control",Placeholder='********' minlength='8',required)
+      .form-group
+      label(for="exampleInputPassword1") Confirm Password:
+      input#ConfirmPassword(type="password" class="form-control",Placeholder='********' minlength='8',required)
+      button.Accountbtn.btn.mt-4#Accountbtn.Save-info.btn-lg(type="submit") Save Password
+
+   
+         
+      

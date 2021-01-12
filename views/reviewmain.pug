@@ -1,0 +1,16 @@
+.col-sm-4.review-scroll.mt-3
+    .card.p-3
+        .card-body
+             .card-info
+              .card-image.Profile
+               img(src=`/User-images/${review.User.photo}`)
+               small.text-uppercase=review.User.name
+               p.card-text.mt-2=review.review
+              .card-body-icon.text-center.mt-3
+               each star in [1,2,3,4,5]
+                 i.far.fa-star(class=`${review.rating>=star?'text-primary':'text-muted'}`)
+
+
+
+
+

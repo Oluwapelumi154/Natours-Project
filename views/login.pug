@@ -1,0 +1,18 @@
+extends base
+block content
+ .container
+  .Login-content.mt-3.d-flex.justify-content-center
+   .card
+    .card-body
+     .sub-card-logo.d-flex.justify-content-center
+       img(src=`/img/logo-green-round.png` class="w-25")
+     p.text-center.mt-2.p-3.text-capitalize.sign-heading Log into your account
+     form.p-4.form-content.form-login
+      .form-group
+       label(for="") Email:
+       input#email(type="email" class="form-control " name="" aria-describedby="emailHelpId" placeholder="...@gmail.com" required)
+      .form-group
+       label(for="") Password:
+       input#password(type="password" class="form-control " name="" aria-describedby="emailHelpId" placeholder="********" required)
+      button(class="btn login-btn btn-primary btn-block p-2") Login
+      a(href='/forgotpassword').forgot-password.d-flex.justify-content-center.mt-3.text-muted.text-capitalize forgot Password?

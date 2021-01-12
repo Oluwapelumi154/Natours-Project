@@ -1,0 +1,30 @@
+Doctype
+html
+ head
+   meta(charset="utf-8")
+   meta(name="viewport" content="width=device-width, intialscale=1.0")
+   title Natours | #{title}
+   link(rel='stylesheet' type="text/css" href="/css/bootstrap.css")
+   link(rel='stylesheet' type="text/css" href="/css/pug.css")
+   link(rel='stylesheet' type="text/css" href='/Users/css/all.min.css')
+   style 
+    
+ body.bg-dark
+  .container.mt-5
+   .card-container.mt-5.p-3.d-flex.justify-content-center
+    .card.Verify-Email
+     .card-body
+     
+      h5.card-title.text-capitalize.text-center.mt-2.Email-Intro Enter your Email
+      .card-text
+       form.forgot-details
+        .form-group
+         label(for="")
+         input(type="email" class="form-control" name="" id="forgot-mail" aria-describedby="emailHelpId" placeholder="Email Address" required)
+        button(class="btn btn-md btn-primary text-capitalize") verify
+ script(src="/js/jquery-3.0.0.min.js")
+ script(src="/js/bootstrap.js") 
+ script(src="/js/popper.min.js")
+ script(src='https://js.stripe.com/v3/')
+ script(src='/js/bundle.js')
+  

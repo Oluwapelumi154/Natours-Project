@@ -1,0 +1,383 @@
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.profile,
+.sub-card-body img {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+i {
+    font-size: 20px;
+}
+
+.sub-card-body h5 {
+    font-size: 20px;
+}
+
+.card-footer a {
+    background-color: rgb(6, 6, 78);
+}
+
+.navbar-dark {
+    background-color: rgb(6, 6, 78);
+}
+
+.card-title {
+    font-size: 25px;
+}
+
+label,
+h6 {
+    color: white;
+}
+
+h6 {
+    margin-top: 10px;
+}
+
+.main-footer h6 {
+    color: black;
+}
+
+.footer-info a {
+    color: black;
+}
+
+.content small {
+    display: block;
+}
+
+a {
+    color: white;
+}
+
+
+/* .btn-2 {
+        background-color: #0099ff;
+    }*/
+
+.btn-2 a:hover {
+    color: red;
+}
+
+.tour-info,
+.tour-people {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-content,
+.tour-type {
+    margin-left: 5px;
+}
+
+small {
+    display: inline-block;
+    padding: 5px;
+}
+
+.err.msg {
+    font-weight: bold;
+}
+
+.tour-guide-profile img,
+.nav-login img,
+.card-image img,
+#image {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+}
+
+.tour-content-item {
+    margin-top: 7px;
+}
+
+
+/*.content {
+    display: block;
+}*/
+
+body {
+    background-color: #d3d2d2;
+}
+
+.card-image.Profile small {
+    font-weight: 700;
+}
+
+
+/*h4 {
+    font-size: 46px;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}*/
+
+.image-icon i {
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.image-content {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 27%;
+}
+
+.heading {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.card-img-overlay h5 {
+    text-transform: uppercase;
+}
+
+small i {
+    font-size: small;
+}
+
+.tour-content-item .text-content {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.tour-guide-info {
+    display: inline;
+}
+
+.tour-guide-profile {
+    margin-top: 10px;
+}
+
+.guide-role {
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.tour-document {
+    margin-top: 25px;
+}
+
+.svg {
+    background-color: #ff0000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='600' y1='25' x2='600' y2='777'%3E%3Cstop offset='0' stop-color='%23ff0000'/%3E%3Cstop offset='1' stop-color='%23E0F'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='650' y1='25' x2='650' y2='777'%3E%3Cstop offset='0' stop-color='%23ff0019'/%3E%3Cstop offset='1' stop-color='%23ce00f3'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='700' y1='25' x2='700' y2='777'%3E%3Cstop offset='0' stop-color='%23ff0031'/%3E%3Cstop offset='1' stop-color='%23b000e6'/%3E%3C/linearGradient%3E%3ClinearGradient id='d' gradientUnits='userSpaceOnUse' x1='750' y1='25' x2='750' y2='777'%3E%3Cstop offset='0' stop-color='%23ff004a'/%3E%3Cstop offset='1' stop-color='%239400da'/%3E%3C/linearGradient%3E%3ClinearGradient id='e' gradientUnits='userSpaceOnUse' x1='800' y1='25' x2='800' y2='777'%3E%3Cstop offset='0' stop-color='%23ff0063'/%3E%3Cstop offset='1' stop-color='%237a00ce'/%3E%3C/linearGradient%3E%3ClinearGradient id='f' gradientUnits='userSpaceOnUse' x1='850' y1='25' x2='850' y2='777'%3E%3Cstop offset='0' stop-color='%23ff007c'/%3E%3Cstop offset='1' stop-color='%236200c1'/%3E%3C/linearGradient%3E%3ClinearGradient id='g' gradientUnits='userSpaceOnUse' x1='900' y1='25' x2='900' y2='777'%3E%3Cstop offset='0' stop-color='%23ff0094'/%3E%3Cstop offset='1' stop-color='%234d00b5'/%3E%3C/linearGradient%3E%3ClinearGradient id='h' gradientUnits='userSpaceOnUse' x1='950' y1='25' x2='950' y2='777'%3E%3Cstop offset='0' stop-color='%23ff00ad'/%3E%3Cstop offset='1' stop-color='%233900a8'/%3E%3C/linearGradient%3E%3ClinearGradient id='i' gradientUnits='userSpaceOnUse' x1='1000' y1='25' x2='1000' y2='777'%3E%3Cstop offset='0' stop-color='%23ff00c6'/%3E%3Cstop offset='1' stop-color='%2328009c'/%3E%3C/linearGradient%3E%3ClinearGradient id='j' gradientUnits='userSpaceOnUse' x1='1050' y1='25' x2='1050' y2='777'%3E%3Cstop offset='0' stop-color='%23ff00df'/%3E%3Cstop offset='1' stop-color='%23180090'/%3E%3C/linearGradient%3E%3ClinearGradient id='k' gradientUnits='userSpaceOnUse' x1='1100' y1='25' x2='1100' y2='777'%3E%3Cstop offset='0' stop-color='%23ff00f7'/%3E%3Cstop offset='1' stop-color='%230b0083'/%3E%3C/linearGradient%3E%3ClinearGradient id='l' gradientUnits='userSpaceOnUse' x1='1150' y1='25' x2='1150' y2='777'%3E%3Cstop offset='0' stop-color='%23E0F'/%3E%3Cstop offset='1' stop-color='%23007'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg %3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' x='100' width='1100' height='800'/%3E%3Crect fill='url(%23c)' x='200' width='1000' height='800'/%3E%3Crect fill='url(%23d)' x='300' width='900' height='800'/%3E%3Crect fill='url(%23e)' x='400' width='800' height='800'/%3E%3Crect fill='url(%23f)' x='500' width='700' height='800'/%3E%3Crect fill='url(%23g)' x='600' width='600' height='800'/%3E%3Crect fill='url(%23h)' x='700' width='500' height='800'/%3E%3Crect fill='url(%23i)' x='800' width='400' height='800'/%3E%3Crect fill='url(%23j)' x='900' width='300' height='800'/%3E%3Crect fill='url(%23k)' x='1000' width='200' height='800'/%3E%3Crect fill='url(%23l)' x='1100' width='100' height='800'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h5 {
+    font-weight: 600;
+}
+
+.container .description {
+    border-radius: 20px;
+}
+
+.footer-info a {
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+label {
+    color: black;
+    font-weight: 600;
+}
+
+.heading-content {
+    color: rgb(6, 6, 78);
+    /*font-weight: 600;*/
+    font-size: 25px;
+}
+
+.main-footer {
+    margin-top: 120px;
+}
+
+#map {
+    width: 100%;
+    height: 700px;
+}
+
+.marker {
+    background-image: url('/img/icon.png');
+    background-size: cover;
+    width: 32px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.navicon {
+    width: 50px;
+    height: 40px;
+}
+
+.scrollspy-example,
+.content-2 {
+    width: 100%;
+    overflow: auto;
+    padding-left: 10px;
+}
+
+.Profile-Content .profile-str {
+    list-style-type: none;
+    padding: 18px;
+    color: #f4f4f4;
+}
+
+.content-2 {
+    height: 500px;
+}
+
+.Profile-Content {
+    /*background-color: rgb(6, 6, 78)*/
+    background-color: #06064e;
+    height: 500px;
+    /* font-size: 14px;*/
+}
+
+#Accountbtn {
+    background-color: rgb(6, 6, 78);
+    color: white;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+#Accountbtn:hover {
+    color: darkcyan;
+}
+
+.Profile-heading {
+    color: rbg(7, 7, 95);
+    font-weight: 650;
+    text-transform: uppercase;
+}
+
+label {
+    color: rgb(7, 7, 95);
+    font-weight: 600;
+}
+
+.select-image a {
+    color: rgb(7, 7, 95);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.select-image a:hover {
+    color: gray;
+}
+
+.select-image #image {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.fas {
+    margin-right: 5px;
+}
+
+.profile-str a {
+    color: #f4f4f4;
+    font-size: 15px;
+}
+
+.profile-str a:hover {
+    color: gray;
+}
+
+.profile-str small {
+    font-weight: 600;
+}
+
+.form-login {
+    margin-top: 25px;
+}
+
+.heading-content {
+    margin-top: 75px;
+}
+
+.Login-content .card,
+.sign-up {
+    width: 450px;
+    margin-top: 50px;
+}
+
+h3 {
+    color: rgb(11, 11, 114);
+    font-weight: 520;
+    font-size: 35px;
+}
+
+.sign-heading {
+    font-size: 17px;
+    font-weight: 520;
+    color: rgb(6, 6, 78);
+}
+
+.form-group label {
+    color: rgb(6, 6, 78);
+    font-weight: 600;
+}
+
+.sign-heading {
+    font-size: 17px;
+    font-weight: 520;
+    color: rgb(6, 6, 78);
+}
+
+.login-btn,
+.submit-btn {
+    margin-top: 30px;
+}
+
+#Submit-sign {
+    margin-top: 60px;
+}
+
+.svg {
+    background-color: #6c757d;
+}
+
+.tour-page {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.forgot-password {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.scroll {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 250px;
+}
+
+.review-scroll {
+    display: inline-block;
+}
+
+.Verify-Email {
+    width: 450px;
+}
+
+.Email-Intro {
+    font-size: 30px;
+    font-weight: 600;
+}

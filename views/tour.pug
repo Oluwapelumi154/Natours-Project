@@ -1,0 +1,87 @@
+extends base 
+block append head
+ script(src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js')
+ link(href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet')
+ 
+
+ //-script(src="/js/mapbox.js")
+block content 
+ .image-header
+  img.img-fluid(src=`/img/${tours.imageCover}` alt=`${tours.name}`)
+  .image-content.text-center.mt-3
+   h4.mt-4.text-white.text-uppercase=`${tours.name} tour`
+   .image-icon.text-center.justify-content-center.mb-3
+    i.fas.fa-map-marker-alt.mb-4
+    span.mb-4.text-uppercase.text-white.ml-2.tour-page=`${tours.Duration} days`
+
+ .container-fluid.p-4
+  section
+   .container
+    .row.p-4
+     .col-sm-6.p-5
+       h5.text-uppercase Quick facts
+       .tour-document
+        .tour-content-item
+         i.far.fa-calendar
+         small.text-content Next Date
+         small.tour-type=tours.startDates[0].toLocaleString('en-us',{month:'long',year:'numeric'})
+        .tour-content-item
+         small.text-content Difficulty
+         small.tour-type.problem=tours.difficulty
+        .tour-content-item
+         i.far.fa-user 
+         small.text-content Participant
+         small.tour-type=`${tours.maxGroupSize} people`
+        .tour-content-item
+         i.far.fa-star
+         small.text-content Rating
+         small.tour-type=`${tours.ratingAverage}/5`
+        .guides
+         h5.mt-4.text-uppercase Your tour guide
+         .mt-4.guides-info
+          each guide in tours.guides
+           .tour-guide-profile
+            img(src=`/User-images/${guide.photo}`)
+            -if(guide.role==='lead-guide')
+             small.guide-role.ml-2 Lead guide
+             small.guide-name.ml-2=guide.name
+            -if(guide.role==='guide')
+             small.guide-role Tour guide
+             small.guide-name.ml-2=guide.name
+     .col-sm-6.p-5
+      h5.text-uppercase=`About the ${tours.name} tour`
+      .tour-document
+       -const paragraphs=tours.description.split('\n')
+        each p in paragraphs
+         p=p
+ svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319" class="d-block bg-info")
+  
+  path(fill="#007bff" fill-opacity="1" d="M0,128L1440,256L1440,320L0,320Z")
+   
+ section.section-map
+  #map(data-locations=`${JSON.stringify(tours.Locations)}`)  
+  
+ 
+              
+ .reviews.svg.p-5
+  .container.scroll
+   .card-container
+    .row.doc
+     each review in tours.Reviews
+      include reviewmain
+    
+
+ .container.mt-4.p-5.justify-content-center
+  .card.description.d-flex.justify-content-center.w-100.p-3
+   .card-body
+    .sub-card-body.mt-3.text-center
+     //-img(src="/img/back.jpg")
+     .card-content.ml-2
+      h5.text-uppercase.card-title What are you Waiting For?
+      p.d-block=`${tours.Duration} days. 1 Adventure.infinite memories. Make it yours today`
+     .btn-content
+      if user
+        button.footer-btn.btn.btn-primary.btn-outline-success.text-center.text-uppercase#book_tour(data-tour-id=`${tours.id}`) Book tour now!
+      else
+       a(href='/login').footer-btn.btn.btn-outline-primary.btn-md.text-center.text-uppercase Login to book tour 
+       

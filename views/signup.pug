@@ -1,0 +1,32 @@
+extends base
+block content
+    .container
+        .mt-3.d-flex.justify-content-center
+            .card.sign-up
+                .card-body
+                    //-h3.mt-5.text-center.text-capitalize Natours
+                    .sub-card-logo.d-flex.justify-content-center
+                     img(src=`/img/logo-green-round.png` class="w-25")
+                     
+                    p.text-center.mt-2.p-3.text-capitalize.sign-heading Sign up to Own an Account
+
+                        form.p-4.Signup_form#Signup-form
+                            .form-group 
+                             label(for="") Name:
+                             input#name-sign( type="text" class="form-control " name="" aria-describedby="emailHelpId" placeholder="Na... Natours" required)
+                                
+                            .form-group 
+                                label(for="") Email:
+                                input#email-sign( type="email" class="form-control " name="" aria-describedby="emailHelpId" placeholder="...@gmail.com" required)
+                                
+                            
+                            .form-group 
+                                label(for="") Password:
+                                input#Password-sign( type="password" class="form-control " minlength='8' name="" aria-describedby="emailHelpId" placeholder="********" required)
+                                
+                            .form-group 
+                                label(for="") PasswordConfirm:
+                                input#PasswordConfirm-sign( type="password" class="form-control " minlength='8' name="" aria-describedby="emailHelpId" placeholder="********" required)
+
+                            
+                            button#Submit-sign( class="btn  btn-primary btn-block mt-4") Submit

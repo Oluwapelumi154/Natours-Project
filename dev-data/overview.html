@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, intialscale=1.0" />
+    <title>OverviewPage</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel='stylesheet' href="Users/css/all.min.css">
+    <style>
+        #img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            vertical-align: middle;
+        }
+        
+        .card-footer,
+        .label,
+        content {
+            background-color: white;
+        }
+        
+        .navbar-dark {
+            background-color: rgb(6, 6, 78);
+        }
+        
+        h6 {
+            color: white
+        }
+        
+        #btn a {
+            list-style-type: none;
+            color: white;
+        }
+        
+        #btn a:hover {
+            color: goldenrod;
+        }
+        
+        .content a {
+            color: white;
+            list-style-type: none;
+        }
+        
+        .content a:hover {
+            color: #5F9EA0;
+        }
+        
+        .main {
+            background-color: rgb(7, 7, 70);
+            margin-top: 100px;
+            color: white;
+        }
+        
+        .icon {
+            background-color: black;
+            font-size: 30px;
+        }
+        
+        body {
+            background-color: #B0C4DE;
+        }
+        
+        .list-group-item {
+            background-color: #ADD8E6;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Avian Tours <i class="fa fa-plane mt-2 ml-2" aria-hidden="true"></i>
+      </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active 3mr-">
+                    <img src="/img/sunrise.jpg" id="img" />
+                    <span class="text-white ml-2">Orebayo Oluwapelumi</span>
+                </li>
+                <li class="nav-item active">
+                    <a class="btn btn-sm mr-3 mt-2 my-2 btn-outline-primary" type="button" id="login" href=" /dev-data/Login.html" tabindex="-1" aria-disabled="false">LOG IN</a
+            >
+          </li>
+          <li class="nav-item active">
+            <a
+              class="btn btn-info btn-sm mr-3 mt-2 my-2"
+              type="button"
+              id="btn"
+              href="/dev-data/User.html"
+              tabindex="-1"
+              aria-disabled="false"
+              >Log Out</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-4">
+          <h4>My bookings</h4>
+          <ul class="list-group mt-3">
+            <li class="list-group-item">The Forest Camper -----></li>
+            <li class="list-group-item">The Park Camper</li>
+            <li class="list-group-item">The Cinema</li>
+            <li class="list-group-item">The Beach</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <h4>Location</h4>
+          <ul class="list-group mt-3">
+            <li class="list-group-item">United States of America, Les Vegas</li>
+            <li class="list-group-item">USA, Los Angeles</li>
+            <li class="list-group-item">Dubai</li>
+            <li class="list-group-item">Canada</li>
+            <li class="list-group-item">South Africa</li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <h4>Date/Time</h4>
+          <ul class="list-group mt-3">
+            <li class="list-group-item">2023-04-07 | 12:00am</li>
+            <li class="list-group-item">2022-03-17 | 2:00pm</li>
+            <li class="list-group-item">2022-03-17 | 2:00pm</li>
+            <li class="list-group-item">2022-03-17 | 2:00pm</li>
+            <li class="list-group-item">2022-03-17 | 2:00pm</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <div class="footer  py-2  main ">
+    <div class="row">
+        <div class="col-sm-4 ">
+            <div class="ml-3">
+                <h6 class="mt-3">Our Services:</h6>
+                <div class="content mt-3 ">
+                  <a href="#">Tour Booking</a>
+
+
+        </div>
+
+        </div>
+
+        </div>
+        <div class="col-sm-4">
+            <div class="ml-3">
+                <h6 class="mt-3">Location:</h6>
+            </div>
+
+        </div>
+        <div class="col-sm-4">
+            <div class="ml-3 mr-3">
+                <h6 class="mt-3">Comment:</h6>
+                <form class='form-group mt-3'>
+                    <div class="form-group ">
+                        <label for="" id="size">Email</label>
+                        <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+
+                    </div>
+                    <div class="form-group">
+                        <label for=""></label>
+                        <textarea class="form-control" name="" id="" rows="3"></textarea>
+                    </div>
+                    <button class="btn btn-outline-primary btn-sm" type="submit">Submit</button>
+            </div>
+        </div>
+
+
+
+        </div>
+
+
+        </div>
+        <div class="footer text-center py-2 icon  ">
+            <div class="btn-group justify-content-center mt-2 mb-3" role="group" aria-label="Button group">
+                <div class="btn " id="btn">
+                    <a href="Login.html"><i class="fab fa-facebook-square "> </i></a>
+                </div>
+                <div class="btn " id="btn">
+                    <a href="#"><i class="fab fa-telegram "> </i></a>
+                </div>
+                <div class="btn  " id="btn">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+
+                <div class="btn  " id="btn">
+                    <a href="#"><i class="fab fa-twitter"> </i></a>
+                </div>
+
+                <div class="btn  " id="btn">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <h6>&copy;Avian Tours</h6>
+
+        </div>
+        <script src="/js/jquery-3.0.0.min.js"></script>
+        <script src="/js/popper.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+
+</html>

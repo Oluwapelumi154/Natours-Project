@@ -1,0 +1,72 @@
+extends base 
+block content 
+ section
+  .navbar-header
+   .carousel.slide#carouselExampleIndicators( data-ride="carousel")
+    ol.carousel-indicators
+     li.active(data-target="#carouselExampleIndicators" data-slide-to="0")
+     li.active(data-target="#carouselExampleIndicators" data-slide-to="1")
+     li.active(data-target="#carouselExampleIndicators" data-slide-to="2")
+    .carousel-inner
+     .carousel-item.active
+      img.d-block.w-100( src="/img/sunrise.jpg" alt="First slide")
+      .carousel-caption.d-md-block
+       h5.h2  NATOURS
+       p 
+     .carousel-item
+      img.d-block.w-100(src="/img/airport3.jpg" alt="Second slide")
+      .carousel-caption.d-md-block
+       h5.h2 NATOURS
+       p 
+     .carousel-item
+      img.d-block.w-100(src="/img/colorful.jpg" alt="Third slide")
+      .carousel-caption.d-md-block
+       h5.h2 NATOURS
+       p 
+    a.carousel-control-prev( href="#carouselExampleIndicators" role="button" data-slide="prev")
+     span.carousel-control-prev-icon(aria-hidden="true")
+     span.sr-only Previous
+    a.carousel-control-next(href="#carouselExampleIndicators" role="button" data-slide="next")
+     span.carousel-control-next-icon(aria-hidden="true")
+     span.sr-only Next
+ .container.mt-5
+  .main
+   .card-container
+    .row
+     each tour in tours
+      .col-sm-4
+       .card.m-3
+        .card.text-white
+         img.card-img(src=`/img/${tour.imageCover}` alt=`${tour.name}`)
+         .card-img-overlay
+          h5.card-title.text-white=tour.name
+        .card-body
+         h4.card-title.heading=`${tour.difficulty} ${tour.Duration}-day tour`
+         small.card-text.text-muted=tour.summary
+         .tour-info
+          small
+           i.fas.fa-map-marker-alt 
+           span.ml-1=tour.StartLocation.description
+          small 
+           i.far.fa-calendar
+           span.ml-1=tour.startDates[0].toLocaleString('en-us',{month:'long',year:'numeric'})
+         .tour-people  
+          small
+           i.far.fa-flag
+           span.ml-1=`${tour.Locations.length} stops`
+          small
+           i.far.fa-user 
+           span.ml-1=`${tour.maxGroupSize} People`
+           
+        .card-footer
+         .info-2
+          span=`$${tour.Price}`
+          |
+          span.text-muted Per Person
+         
+         .info
+          span.text-dark=tour.ratingAverage
+          |
+          span.text-muted=`rating (${tour.ratingQuantity})`
+         .details.d-flex.justify-content-end
+          a(href=`/tour/${tour.slug}`).btn.btn-md Details

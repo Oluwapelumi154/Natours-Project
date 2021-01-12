@@ -1,0 +1,54 @@
+h6 {
+    color: white;
+}
+
+a {
+    color: red;
+}
+
+.card-title img {
+    vertical-align: middle;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+a:hover {
+    color: purple;
+}
+
+body {
+    background-color: #e6e6fa;
+}
+
+.main {
+    background-color: rgb(7, 7, 70);
+    margin-top: 100px;
+}
+
+.form-group {
+    color: rgb(13, 145, 31);
+}
+
+.navbar-dark {
+    background-color: rgb(6, 6, 78);
+}
+
+.icon {
+    background-color: black;
+    font-size: 30px;
+}
+
+.label,
+content {
+    background-color: white;
+}
+
+#size {
+    font-size: 14px;
+}
+
+#login {
+    background-color: #5f9ea0;
+    color: white;
+}
